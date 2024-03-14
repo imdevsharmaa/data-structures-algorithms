@@ -218,6 +218,9 @@ class LinkedList:
 
         current_node = self.head
 
+        if current_node == None:
+            return 'Empty Linked List !!!'
+
         while current_node !=None:
             next_node = current_node.next
             current_node.next = previous_node
